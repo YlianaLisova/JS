@@ -18,3 +18,41 @@
 //     genre: 'drama'
 // }
 // console.log(book);
+
+// 4. Створити масив
+// let book = [
+//     {
+//         name: 'The english patient',
+//         numberOfPages: 369,
+//         genre: 'drama',
+//         author: 'Michael Ondatje'
+//     },
+//     {
+//         name: 'Harry Potter',
+//         numberOfPages: 534,
+//         genre: 'drama',
+//         author: 'J.K. Rowling'
+//     }
+// ];
+// let book1 = book[0];
+// console.log(book1);
+// let book2 = book[1];
+// console.log(book2);
+
+// 5. Напишіть код, який вираховує...
+// let height = 23;
+// let width = 10;
+// let s = (height * width);
+// console.log(s + 'см') ;
+
+// 6.
+// let heightC = 10;
+// let dC = 4;
+// let v = (3.14 * heightC * (dC / 2)**2 + 'см');
+// console.log(v);
+
+// 7.
+// let n = 3;
+// let m = 4;
+// let k = Math.sqrt(n**2 + m**2);
+// console.log(k);
