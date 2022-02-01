@@ -129,3 +129,44 @@
 // let age = 17;
 //
 // prompt('Вітаю' + ' ' + firstName +' ' + middleName + '.' + ' ' + 'Тобі' + ' ' + age + ' ' + 'років.')
+
+
+// 7. За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
+// let a = 100;
+// let b = '100';
+// let c = true;
+// console.log(typeof a);
+// console.log(typeof b);
+// console.log(typeof c);
+
+// 8.  Визначити відповідний оператор в виразах що б вийшов відповідний результат.
+// let bool1 = 5 < 6 // true
+// console.log(bool1);
+// let bool2 = 5 === 6; // false
+// console.log(bool2);
+// let bool3 = 5 >= 6; // false
+// console.log(bool3);
+// let bool4 = 5 === 6; // false
+// console.log(bool4);
+// let bool5 = 10 === 10; // true
+// console.log(bool5);
+// let bool6 = 10 == 10; // true
+// console.log(bool6);
+// let bool7 = 10 !== 10; // false
+// console.log(bool7);
+// let bool8 = 10 > 10; // false
+// console.log(bool8);
+// let bool9 = 10 < 10; // false
+// console.log(bool9);
+// let bool10 = 123 === '123'; // false
+// console.log(bool10);
+// let bool11 = 123 == '123'; // true
+// console.log(bool11);
+
+// 9. Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
+// let str = "20";
+// let a = 5;
+// document.write(str + a + "<br/>"); // 205
+// document.write(str - a + "<br/>"); // 15
+// document.write(str * "2" + "<br/>");// 40
+// document.write(str / 2 + "<br/>");// 10
