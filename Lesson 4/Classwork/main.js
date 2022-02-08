@@ -72,6 +72,41 @@
 // document.write(middleA(array))
 
 // 7. створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
-function numbers(...abc) {
+// function numbers(abc) {
+// let min = arguments[0];
+// let max = arguments[0];
+//     for (const element of arguments) {
+// if (min > element){
+//     min = element
+// } else if (max < element){
+//     max = element
+// }
+//     }
+//     console.log(max)
+//     return min
+// }
+// document.write(numbers(10,29,5954))
 
-}
+// 8. створити функцію яка заповнює масив рандомними числами
+// function random(length){
+//     let array = []
+//     for (let i = 0; i < length; i++) {
+//         array.push(Math.floor(Math.random()*100))
+//     }
+//     return array;
+// }
+// console.log(random(17))
+
+// 9. створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
+// let array = [];
+// function randomArray(length,limit) {
+//     for (let i = 0; i < length; i++) {
+//         array.push(Math.round(Math.random() * limit))
+//     }
+//     return array;
+// }
+//
+// document.write(randomArray(10, 100))
+
+// 10. Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+
