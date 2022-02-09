@@ -109,16 +109,26 @@
 // document.write(randomArray(10, 100))
 
 // 10. Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
-let newArray = []
-let array = []
-function getArray(length){
-    for (let i = 0; i < array.length; i++) {
-        for (let r = array.length - 1; r >= 0; r--){
-            array[i] = newArray[r]
-        }
+// function reverseArray(array) {
+//     let newArray = []
+//     for (let r = array.length - 1, i = 0;  i < array.length; i++, r--) {
+//         newArray[i] = array[r]
+//
+//     }
+//     return newArray
+// }
+// console.log(reverseArray([1,2,3]))
 
-    }
-    return newArray
-}
 
-console.log(getArray(3))
+
+
+
+
+
+
+
+
+
+
+
+
