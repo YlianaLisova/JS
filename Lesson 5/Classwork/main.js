@@ -57,8 +57,8 @@
 //     }
 //     return sum;
 // }
-// document.write(`Сума елументів масиву: ${sumArray(array)}`)
-// console.log(`Сума елументів масиву: ${sumArray(array)}`)
+// document.write(`Сума елементів масиву: ${sumArray(array)}`)
+// console.log(`Сума елементів масиву: ${sumArray(array)}`)
 
 // 6.створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
 // let array = [3,7,45,67,2,7];
@@ -98,6 +98,14 @@
 // console.log(randomNumbers(5))
 
 // 9.створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
+// let randomNumbers = (length, limit) => {
+//     let numRandom = [];
+//     for (let i = 0; i < length; i++) {
+//        numRandom.push(Math.floor(Math.random() * limit))
+//     }
+//     return numRandom;
+// }
+// console.log(randomNumbers(7,107));
 
 // 10. Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
 // let arr = [1,2,3];
@@ -110,3 +118,5 @@
 //     return newArray
 // }
 // console.log(array(arr));
+
+
