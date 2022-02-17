@@ -46,12 +46,16 @@
 // [1,0,6,0,3] => [1,6,3,0,0]
 // [0,1,2,3,4] => [1,2,3,4,0]
 // [0,0,1,0]   => [1,0,0,0]
-let array = (arr) => {
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === 0) {
-
-        }
-    }
-    return arr
-}
-console.log(array([1,0,6,0,3]))
+// let array = (arr) => {
+//    let array2 = [];
+//    let array3 = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] === 0) {
+//             array2.push(arr[i])
+//         } else {
+//             array3.push(arr[i])
+//         }
+//     }
+//     return array3.concat(array2)
+// }
+// console.log(array([1,0,6,0,3]));
