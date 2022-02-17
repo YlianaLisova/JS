@@ -86,30 +86,46 @@
 
 // 3.-створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги.
 // Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
-class  Cindrella {
-    constructor(name,age,footSize) {
-        this.name = name;
-        this.age = age;
-        this.footSize = footSize;
-    }
-}
+// class  Cinderella {
+//     constructor(name,age,footSize) {
+//         this.name = name;
+//         this.age = age;
+//         this.footSize = footSize;
+//     }
+// }
+// //Створити масив з 10 попелюшок.
+// let array = [
+//     new Cinderella('Olya',18,35),
+//     new Cinderella('Yliana' , 18, 39),
+//     new Cinderella('Ann' , 19, 32),
+//     new Cinderella('Nastya' , 18, 36),
+//     new Cinderella('Ira' , 18, 37),
+//     new Cinderella('Sophia' , 18, 40),
+//     new Cinderella('Oxana' , 18, 40),
+//     new Cinderella('Irina' , 18, 41),
+//     new Cinderella('Sasha' , 18, ),
+//     new Cinderella('Sophia' , 13, 33)
+// ];
+// // Створити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
+// class Prince {
+//     constructor(name, age, shoeFind) {
+//         this.name = name;
+//         this.age = age;
+//         this.shoeFind = shoeFind;
+//     }
+// }
+// let prince = new Prince('Anonym',24,39)
+//
+// // За допомоги циклу знайти яка попелюшка повинна бути з принцом.
+// let para = (array,prince) => {
+//     for (const element of array) {
+//         if (element.footSize === prince.shoeFind) {
+//             return `Your cinderella is ${element.name}`
+//         }
+//     }
+// }
+// console.log(para(array,prince))
+// // Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+// let addPara = array.find((girl) => girl.footSize === prince.shoeFind) ;
+// console.log(addPara);
 
-//Створити масив з 10 попелюшок.
-let array = [
-    new Cindrella('Olya',18,39),
-    new Cindrella('Yliana' , 18, 40),
-    new Cindrella('Ann' , 19, 40),
-    new Cindrella('Nastya' , 18, 40),
-    new Cindrella('Ira' , 18, 40),
-    new Cindrella('Sophia' , 18, 40),
-    new Cindrella('Oxana' , 18, 40),
-    new Cindrella('Irina' , 18, 40),
-    new Cindrella('Sasha' , 18, 40),
-    new Cindrella('Sophia' , 18, 40)
-];
-// Створити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
-
-
-// За допомоги циклу знайти яка попелюшка повинна бути з принцом.
-
-// Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
