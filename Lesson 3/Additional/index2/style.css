@@ -1,0 +1,14 @@
+.user-block {
+    background: silver;
+    margin: 5px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,130px);
+    height: 300px;
+    width: 550px;
+}
+.users-box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,130px);
+    margin: 5px;
+}

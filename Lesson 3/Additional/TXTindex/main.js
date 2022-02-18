@@ -85,4 +85,76 @@
 // console.log(newArray);
 
 // 8. Створити масив з будь-якими значеннями (стрінги, числа, і тд...). пройтись по ньому, і якщо елемент є числом - додати його в інший масив.
+// let array = ['Happy', 17, true, 'girl',23,'Just', 'do',67,34,'it',76,23,18];
+// let newArray = [];
+// for (const element of array) {
+//     if (typeof element === "number") {
+// newArray.push(element)
+//     }
+// }
+// console.log(array);
+// console.log(newArray)
 
+//9.- Дано 2 масиви з рівною кількістю об'єктів.
+// Масиви:
+// let usersWithId = [
+//     {id: 1, name: 'vasya', age: 31, status: false},
+//     {id: 2, name: 'petya', age: 30, status: true},
+//     {id: 3, name: 'kolya', age: 29, status: true},
+//     {id: 4, name: 'olya', age: 28, status: false}
+// ];
+//
+// let citiesWithId = [
+//     {user_id: 3, country: 'USA', city: 'Portland'},
+//     {user_id: 1, country: 'Ukraine', city: 'Ternopil'},
+//     {user_id: 2, country: 'Poland', city: 'Krakow'},
+//     {user_id: 4, country: 'USA', city: 'Miami'}
+// ];
+// З'єднати в один об'єкт користувача та місто з відповідними "id" та "user_id" .
+// Записати цей об'єкт в новий масив
+// for (const element1 of usersWithId) {
+//     for (const element2 of citiesWithId) {
+//         if (element1.id === element2.user_id) {
+//             element1.address = element2.city;
+//         }
+//     }
+// }
+// console.log(usersWithId);
+
+// 10.Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.
+// let array = [34,67,3,2,1,45,78,56,45,34]
+// for (const number of array) {
+//     if (number % 2 === 0) {
+//         console.log(number)
+//     }
+// }
+// 11. Взяти масив з 10 чисел або створити його. Створити 2й порожній масив. За допомогою будь-якого циклу скопіювати значення одного масиву в інший.
+// let array = [34, 67, 3, 2, 1, 45, 78, 56, 45, 34]
+// let newArray = [];
+// for (const element of array) {
+//     newArray.push(element)
+// }
+// console.log(newArray)
+// 12. Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
+// let array = [ 'a', 'b', 'c'];
+// let string = '';
+// for (let i = 0; i < array.length; i++) {
+//     string += array[i]
+// }
+// console.log(string)
+// 13. Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.
+// let array = ['a', 'b', 'c'];
+// let string = '';
+// let i = 0
+// while (i < array.length) {
+//     string += array[i]
+//     i++
+// }
+// console.log(string)
+// 14. Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
+// let array = [ 'a', 'b', 'c'];
+// let string = '';
+// for (const element of array) {
+//     string += element
+// }
+// console.log(string);
