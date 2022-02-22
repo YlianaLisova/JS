@@ -179,3 +179,20 @@
 // ];
 // Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
 // Приклад структири знаходиться у файлі example.png
+// for (const element of coursesArray) {
+//     let divForAll = document.createElement('div');
+//     let h1 = document.createElement('h1');
+//     h1.innerText = element.title;
+//     let monthP = document.createElement('p');
+//     monthP.innerText = element.monthDuration;
+//     let hourP = document.createElement('p');
+//     hourP.innerText = element.hourDuration;
+//     let modulesUl = document.createElement('ul')
+//     for (const modulesEl of element.modules) {
+//         let modulesLi = document.createElement('li')
+//         modulesLi.innerText = modulesEl
+//         modulesUl.append(modulesLi)
+//     }
+//     divForAll.append(h1, monthP, hourP, modulesUl)
+//     document.body.appendChild(divForAll)
+// }
