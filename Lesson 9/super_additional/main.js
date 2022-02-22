@@ -1,6 +1,4 @@
-// - З масиву users за допомогою циклу витягнути адреси користувачів і записати (скопіювати) їх в інший порожній масив.
-// - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement. Всі данні в одному блоці.
-// - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам (div>div*4)
+
 // - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам , блок з адресою зробити окремим блоком, з блоками для кожної властивості
 
 let users = [{
@@ -59,3 +57,44 @@ let users = [{
     status: true,
     address: {city: 'Cairo', country: 'Egypt', street: 'Seashore', houseNumber: 45}
 }];
+// 1. - З масиву users за допомогою циклу витягнути адреси користувачів і записати (скопіювати) їх в інший порожній масив.
+// let array =[];
+// for (const user of users) {
+//     for (const element in user.address) {
+//         array.push(`${element}: ${user.address[element]}`);
+//     }
+// }
+// console.log(array)
+
+// 2.- За допомоги циклу проітерувати масив users, записати кожного юзера у свій блок за допомоги document.createElement. Всі данні в одному блоці.
+// for (const user of users) {
+//     let divWrap = document.createElement('div');
+//     divWrap.append( ${user.name},${user.age}, ${user.status}, Address: )
+//     for (const ad in user.address) {
+//         divWrap.append( ${ad}: ${user.address[ad]})
+//         document.body.appendChild(divWrap)
+//     }
+// }
+
+// 3.- За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам (div>div*4)
+for (const user of users) {
+    let divWrap = document.createElement('div');
+    let name = document.createElement('div');
+    name.innerText = user.name;
+    let age = document.createElement('div');
+    age.innerText = user.age;
+    let status = document.createElement('div');
+    status.innerText = user.status;
+    let address = document.createElement('div');
+    let address2 = document.createElement('ul');
+    address2.innerText = 'Address:';
+    for (const ad in user.address) {
+        let li = document.createElement('li');
+        li.innerText = `${ad}: ${user.address[ad]}`
+        address2.appendChild(li)
+        divWrap.append(name,age,status,address,address2)
+        document.body.appendChild(divWrap)
+    }
+}
+
+// 4. - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам , блок з адресою зробити окремим блоком, з блоками для кожної властивості

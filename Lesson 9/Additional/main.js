@@ -243,18 +243,19 @@ for (const element1 of usersList) {
     let h4_2 = document.createElement('h4')
     h4_2.innerText = element1.username;
     let a = document.createElement('a');
+    a.href = '#'
     a.innerText = element1.email;
     let ul1 = document.createElement('ul');
     ul1.innerText = 'Address:'
     for (const addressEl in element1.address) {
         let li1 = document.createElement('li');
-        li1.innerText =`${element1.address[addressEl]}` ;
+        li1.innerText =`${addressEl}: ${element1.address[addressEl]}` ;
         ul1.appendChild(li1);
         let geoUl = document.createElement('ul');
         geoUl.innerText = 'Geo:'
         for (const geoEl in addressEl.geo) {
             let li2 = document.createElement('li');
-            li2.innerText = geoEl;
+            li2.innerText = `${addressEl.geo[geoEl]}`;
             geoUl.appendChild(li2)
             ul1.appendChild(geoUl)
         }
@@ -262,12 +263,13 @@ for (const element1 of usersList) {
     let phone = document.createElement('p');
     phone.innerText = element1.phone;
     let website = document.createElement('a')
+    website.href = '#'
     website.innerText = element1.website;
     let companyUl = document.createElement('ul');
     companyUl.innerText = 'Company:'
     for (const companyEl in element1.company) {
         let companyLi = document.createElement('li');
-        companyLi.innerText = companyEl
+        companyLi.innerText = `${companyEl}: ${element1.company[companyEl]}`
         companyUl.appendChild(companyLi)
 
         divBox.append(divEl1,h4_1,h4_2,a,ul1,phone,website,companyUl)
