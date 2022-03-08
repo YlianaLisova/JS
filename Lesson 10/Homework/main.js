@@ -25,23 +25,41 @@
 //     e.preventDefault();
 // }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// - Создайте меню, которое раскрывается/сворачивается при клике
+// 4. Создайте меню, которое раскрывается/сворачивается при клике
+// let menuElement = document.querySelector('.menu');
+// let titleElement = menuElement.querySelector('.title');
 //
+// titleElement.onclick = function () {
+//     menuElement.classList.toggle('hidden');
+// }
 //
 // - Создать список комментариев , пример объекта коментария - {title : 'lorem', body:'lorem ipsum dolo sit ameti'}.
 //     Вывести список комментариев в документ, каждый в своем блоке.
 //     Добавьте каждому комментарию по кнопке для сворачивания его body.
+// let comments = [
+//     {title: 'Lorem', body: 'lorem ipsum dolo sit ameti'},
+//     {title: 'Lorem', body: 'lorem ipsum dolo sit ameti'},
+//     {title: 'Lorem', body: 'lorem ipsum dolo sit ameti'},
+//     {title: 'Lorem', body: 'lorem ipsum dolo sit ameti'},
+//     {title: 'Lorem', body: 'lorem ipsum dolo sit ameti'}
+// ]
+//
+// let listOfComments = document.createElement('div');
+// for (const listOfComment of comments) {
+//     let div = document.createElement('div');
+//     let h3 = document.createElement('h3')
+//     let p = document.createElement('p');
+//     let btn = document.createElement('button')
+//     let hr = document.createElement('hr')
+//
+//     h3.innerText = listOfComment.title
+//     p.innerText = listOfComment.body
+//     btn.innerText = 'Click'
+//
+//     btn.onclick = () => {
+//         p.classList.toggle('hidden2');
+//     }
+//     div.append(h3, p, btn);
+//     listOfComments.append(div, hr)
+// }
+// document.body.appendChild(listOfComments)
