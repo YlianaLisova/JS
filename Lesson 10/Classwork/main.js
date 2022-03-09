@@ -45,81 +45,79 @@
 // - Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вміст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додаткова частина для завдання)
-let input1 = document.createElement('input');
-let input2 = document.createElement('input');
-let input3 = document.createElement('input');
-let btn = document.createElement('button');
-btn.innerText = 'Create table';
-document.body.append(input1,input2,input3,btn);
-
-btn.addEventListener('click', function (){
-    let tr = input1.value;
-    let th = input2.value;
-    let text = input3.value;
-
-    function generation(tr, td, text) {
-        let div = document.createElement('div');
-        let table = document.createElement('table');
-        table.style.border = '1px solid black';
-        div.appendChild(table);
-    }
-})
-
-
-
-
-
-
-
-
-
-
-// let inputOne = document.createElement('input');
-// let inputTwo = document.createElement('input');
-// let inputThree = document.createElement('input');
-// let button = document.createElement('button');
+// let input1 = document.createElement('input');
+// let input2 = document.createElement('input');
+// let input3 = document.createElement('input');
+// let btn = document.createElement('button');
+// btn.innerText = 'Create table';
+// document.body.append(input1, input2, input3, btn);
 //
-// button.innerText = 'Створи таблицю';
-// document.body.append(inputOne, inputTwo, inputThree, button);
+// btn.addEventListener('click', function () {
+//     let tr = input1.value;
+//     let td = input2.value;
+//     let text = input3.value;
 //
-//
-// button.addEventListener('click', function () {
-//     let tr = inputOne.value;
-//     let td = inputTwo.value;
-//     let enterText = inputThree.value;
-//
-//     function generationTable(tr, td, inner) {
+//     function generation(tr, td, text) {
+//         let div = document.createElement('div');
 //         let table = document.createElement('table');
-//         let divTable = document.createElement('div');
-//
-//         table.style.border = '1px solid red';
-//         divTable.appendChild(table);
-//         document.body.appendChild(divTable);
-//
+//         table.style.border = '1px solid black';
+//         div.appendChild(table);
+//         document.body.appendChild(div);
 //         for (let i = 0; i < tr; i++) {
 //             let tr = document.createElement('tr');
-//             tr.style.border = '1px solid blue';
 //             for (let j = 0; j < td; j++) {
 //                 let td = document.createElement('td');
-//                 td.style.border = '1px solid green';
-//                 td.innerText = `${inner}`;
+//                 td.style.border = '1px solid pink'
+//                 td.innerText = `${text}`;
 //                 table.appendChild(tr);
 //                 tr.appendChild(td);
 //             }
 //         }
 //     }
-//     generationTable(tr, td, enterText);
+//
+//     generation(tr, td, text);
 // })
+
 //
 // - Створити масив не цензурних слів.
 //     Створити інпут текстового типу.
 //     Якщо людина вводить слово і воно міститься в масиві не цензурних слів
 // кинути алерт з попередженням.
 //     Перевірку робити при натисканні на кнопку
-//
-//
-// - Створити масив не цензурних слів.
+// let obsceneArray = ['fuck', 'bitch', 'shit'];
+// let input = document.createElement('input');
+// let button = document.createElement('button');
+// button.innerText = 'Click me';
+// document.body.append(input, button);
+// button.addEventListener('click', function () {
+//     for (const element of obsceneArray) {
+//         if (element === input.value){
+//             alert('This is a bad word');
+//             input.value = '';
+//         } else if (input.value) {
+//             alert('All is good');
+//             input.value = '';
+//         }
+//     }
+// })
+
+// - Створити масив нецензурних слів.
 //     Створити інпут текстового типу.
 //     Потрібно перевіряти чи не містить ціле речення в собі погані слова.
 //     Кинути алерт з попередженням у випадку якщо містить.
 //     Перевірку робити при натисканні на кнопку
+// let obsceneArray = ['fuck', 'bitch', 'shit'];
+// let input = document.createElement('input');
+// let button = document.createElement('button');
+// button.innerText = 'Click me';
+// document.body.append(input, button);
+// input.addEventListener('input', (e) => {
+//     for (const element of obsceneArray) {
+//         if (e.target.value.includes(element)) {
+//             alert('Atattaat')
+//         }
+//     }
+//     button.addEventListener('click', function (e) {
+//         console.log(input.value)
+//     })
+// })
