@@ -10,3 +10,15 @@
 // }
 // -створити форму з інпутами для model,type та volume автівки.
 //     при відпарвці форми об'єкти зберігаються в масиві в локальному сховищі.
+let array = JSON.parse(localStorage.getItem('cars')) || [];
+let form = document.forms.form2;
+form.onsubmit = function (e) {
+    e.preventDefault();
+    let model = e.target.model.value;
+    let type = e.target.type.value;
+    let volume = e.target.volume.value;
+    let cars = {model, type, volume};
+    array.push(cars);
+    localStorage.setItem('cars', JSON.stringify(array))
+
+}
