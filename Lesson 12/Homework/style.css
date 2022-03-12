@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+.wrapper {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.post {
+    width: 220px;;
+    height: 270px;
+    padding: 10px;
+    margin: 8px;
+    border: 1px solid darkslategrey;
+    border-radius: 10%;
+}
+.post h4 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.wrapper2 {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.comment {
+    width: 220px;
+    height: 325px;
+    border-radius: 10%;
+    border: 1px solid hotpink;
+    padding: 8px;
+}
