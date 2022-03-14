@@ -43,6 +43,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
                         return value.json()
                     })
                     .then(posts => {
+                        let button2 = document.createElement('button')
                         for (const post of posts) {
                             if (user.id === post.userId) {
                                 let divPost = document.createElement('div')
@@ -52,8 +53,8 @@ fetch('https://jsonplaceholder.typicode.com/users')
                                 <h4>Title: ${post.title}</h4>
                                 <h4>Body: ${post.body}</h4>
                                 <hr>`
-                                let button2 = document.createElement('button')
                                 button2.innerText = 'Click me and see comments'
+                                divPost.appendChild(button2)
                                 button2.onclick = () => {
                                     fetch('https://jsonplaceholder.typicode.com/comments')
                                         .then(value => {
@@ -70,7 +71,6 @@ fetch('https://jsonplaceholder.typicode.com/users')
                                                     <h4>Email: ${comment.email}</h4>
                                                     <h4>Body: ${comment.body}</h4>
                                                     `
-                                                    divComment.appendChild(button2)
                                                     divPost.appendChild(divComment);
 
                                                 }
