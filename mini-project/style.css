@@ -12,6 +12,9 @@
     margin: 10px;
     margin-left: calc(23% - 100px);
     margin-right: calc(23% - 100px);
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 .user a {
     text-decoration: none;
