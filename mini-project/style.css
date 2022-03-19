@@ -1,0 +1,19 @@
+.users {
+    display: flex;
+    flex-wrap: wrap;
+}
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: pink;
+    width: 220px;
+    height: 120px;
+    margin: 10px;
+    margin-left: calc(23% - 100px);
+    margin-right: calc(23% - 100px);
+}
+.user a {
+    text-decoration: none;
+    color: black;
+}
