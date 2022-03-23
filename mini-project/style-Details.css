@@ -1,0 +1,23 @@
+.wrapper {
+    background: indianred;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid black;
+box-sizing: border-box;
+    margin-bottom: 10px;
+    color: mistyrose;
+    padding-left: 4px;
+}
+.detailsBtn {
+    color: black;
+    transition: box-shadow, transform .35s;
+    background: moccasin;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 3px 23px 5px rgba(38, 32, 32, 0.55);
+    margin-left: 10%;
+
+}
+.post {
+    margin-bottom: 7px;
+}
