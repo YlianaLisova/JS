@@ -24,8 +24,8 @@ for (const company in user.company) {
     li2.innerText = `${company}: ${user.company[company]}`
     ul2.append(li2);
 }
-let posts = document.getElementsByClassName('posts')
-let btnPost = document.createElement('button')
+let posts = document.getElementsByClassName('posts')[0];
+let btnPost = document.createElement('button');
 btnPost.classList.add('detailsBtn');
 btnPost.onclick = () => {
     fetch(`https://jsonplaceholder.typicode.com/users/${user.id}/posts`)
@@ -35,10 +35,19 @@ btnPost.onclick = () => {
                 let divPost = document.createElement('div');
                 divPost.classList.add('post');
                 divPost.innerText = `${post.id}- ${post.title}`;
-                divWrapper.appendChild(divPost)
+                divWrapper.appendChild(divPost);
+                let btnPostDetails = document.createElement('button');
+                btnPostDetails.innerText = 'Post Details';
+                btnPostDetails.onclick = function () {
+                    location.href = `./post-details.html?data=${JSON.stringify(post)}`;
+                }
+               posts.append(divPost, btnPostDetails)
+                divWrapper.appendChild(posts);
+
             }
         })
+    btnPost.disabled = true;
 }
 btnPost.innerText = 'post of current user'
 divWrapper.append(divBox, ul1, ul2)
-document.body.append(divWrapper, btnPost)
+document.body.append(divWrapper, btnPost,posts)
