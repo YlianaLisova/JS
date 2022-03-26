@@ -1,0 +1,20 @@
+.post {
+    width: 350px;
+    background: hotpink;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.comments {
+    background: hotpink;
+    border: 1px solid darkmagenta;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.li {
+    width: 135px;
+    margin: 60px;
+    background: deeppink;
+    border: 1px solid black;
+    border-radius: 10px;
+}
