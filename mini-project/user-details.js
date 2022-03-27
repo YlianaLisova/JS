@@ -1,32 +1,38 @@
 let newUrl = new URL(location.href);
 let user = JSON.parse(newUrl.searchParams.get('data'));
 console.log(user);
-let divWrapper = document.createElement('div')
-divWrapper.classList.add('wrapper')
-let divBox = document.createElement('div');
-divBox.innerHTML = `
-<h4>ID: ${user.id}</h4>
-<h4>Name: ${user.name}</h4>
-<h4>Username: ${user.username}</h4>
-<h4>Email: ${user.email}</h4>
-`
-let ul1 = document.createElement('ul')
-ul1.innerHTML = '<h4>Address:</h4>'
-for (const address in user.address) {
-    let li1 = document.createElement('li');
-    li1.innerText = `${address}: ${user.address[address]}`
-    ul1.append(li1)
+let divWrapper = document.getElementsByClassName('wrapper')[0]
+for (const key in user) {
+    let keyItem = document.createElement('div');
+    keyItem.style.marginTop = '15px';
+    if (typeof user[key] !== 'object') {
+        keyItem.innerText = `${key}: ${user[key]}`
+    } else {
+        keyItem.innerText = `${key}:`
+
+        for (const item in user[key]) {
+            let keyItem2 = document.createElement('div');
+
+            if (typeof user[key][item] !== 'object') {
+                keyItem2.innerText = `${item}: ${user[key][item]}`
+            } else {
+                keyItem2.innerText = `${item}`
+
+                for (const keyElement in user[key][item]) {
+                    let keyItem3 = document.createElement('div');
+                    keyItem3.innerText = `${keyElement}: ${user[key][item][keyElement]}`
+                    keyItem2.appendChild(keyItem3);
+                }
+            }
+            keyItem.appendChild(keyItem2);
+        }
+    } divWrapper.append(keyItem);
 }
-let ul2 = document.createElement('ul');
-ul2.innerHTML = `<h4>Company: </h4>`
-for (const company in user.company) {
-    let li2 = document.createElement('li');
-    li2.innerText = `${company}: ${user.company[company]}`
-    ul2.append(li2);
-}
+
 let posts = document.getElementsByClassName('posts')[0];
 let btnPost = document.createElement('button');
 btnPost.classList.add('detailsBtn');
+btnPost.innerText = 'post of current user'
 btnPost.onclick = () => {
     fetch(`https://jsonplaceholder.typicode.com/users/${user.id}/posts`)
         .then(value => value.json())
@@ -41,13 +47,12 @@ btnPost.onclick = () => {
                 btnPostDetails.onclick = function () {
                     location.href = `./post-details.html?data=${JSON.stringify(post)}`;
                 }
-               posts.append(divPost, btnPostDetails)
-                divWrapper.appendChild(posts);
+                posts.append(divPost, btnPostDetails)
 
             }
         })
     btnPost.disabled = true;
 }
-btnPost.innerText = 'post of current user'
-divWrapper.append(divBox, ul1, ul2)
-document.body.append(divWrapper, btnPost,posts)
+let container = document.getElementsByClassName('container')[0];
+container.append(btnPost);
+
